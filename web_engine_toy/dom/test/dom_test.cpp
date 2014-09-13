@@ -41,6 +41,11 @@ TEST(DomTreeTest, DomTreeInitTest)
             "--Head\n");
     ASSERT_EQ(out, oss.str());
 
+    delete head;
+    delete p;
+    delete txt;
+    delete txt2;
+
 }
 
 } } } } 
