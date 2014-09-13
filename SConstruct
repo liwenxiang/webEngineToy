@@ -5,6 +5,7 @@ import os
 
 # do not use -lpthread, that's wrong
 env['LINKFLAGS'] = ['-pthread']
+env['CCFLAGS'] = ['--std=c++11']
 
 env["project_name"] = "web_engine_toy"
 
