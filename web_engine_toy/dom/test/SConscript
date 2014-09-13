@@ -1,0 +1,10 @@
+import os, sys
+Import('env')
+env = env.Clone()
+
+cpps = Glob("*.cpp")
+
+env["run_ut"](env, 'dom_test', cpps, env["bin_depend_libs"] + ['web_engine_toy_dom'])
+
+
+
