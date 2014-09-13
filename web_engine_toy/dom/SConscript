@@ -6,4 +6,9 @@ cpps = Glob("*.cpp")
 lib = env.SharedLibrary(target = env["build_lib_path"][0] + "web_engine_toy_dom", 
         source = cpps)
 
+
 SConscript("test/SConscript")
+
+header_install_dir = [env['install_head_root'] + "/web_engine_toy/dom/"]
+env.Alias("install", env.Install(header_install_dir, Glob("*.h")))
+env.Alias("install", env.Install(env["install_lib_root"], lib))

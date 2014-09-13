@@ -9,7 +9,7 @@ env['LINKFLAGS'] = ['-pthread']
 env["project_name"] = "web_engine_toy"
 
 env['install_lib_root'] = ['#/build/install/lib/']
-env['install_head_root'] = ['#/build/install/header/']
+env['install_head_root'] = '#/build/install/header/'
 
 
 env["user_include"] = ['/home/liwenxiang/bin/header/']
